@@ -26,7 +26,7 @@ float16, float32, float64, float_ (shorthand for float64)
 complex64, complex128, complex_ (shorthand for complex128)
 '''
 arr = np.array([1, 2, 3], dtype=np.int32)
-print(arr.itemsize) #return the size of items in the array in Bytes
+print(arr.itemsize)     #return the size of items in the array in Bytes
 
 #Structure Data Type
 dataType = np.dtype([('age',np.int64)]) 
@@ -35,27 +35,17 @@ arr = np.array([(10), (20 ), (30 )], dtype=dataType)
 print(arr)
 
 '''
-'b'     boolean
-
-'i'     (signed) integer
-
-'u'     unsigned integer
-
-'f'     floating-point
-
-'c'     complex-floating point
-
-'m'     timedelta
-
-'M'     datetime
-
-'O'     (Python) objects
-
-'S','a' (byte-)string
-
-'U'     Unicode
-
-'V'      raw data (void)
+'b'         """ """  """ """boolean
+'i'         (signed) integer
+'u'         unsigned integer
+'f'         floating-point
+'c'         complex-floating point
+'m'         timedelta
+'M'         datetime
+'O'         (Python) objects
+'S','a'     (byte-)string
+'U'         Unicode
+'V'         raw data (void)
 '''
 
 student = np.dtype([('name', 'S'), ('roll', np.int8), ('cgpa', np.float32)])

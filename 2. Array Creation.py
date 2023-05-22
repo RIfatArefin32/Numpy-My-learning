@@ -78,7 +78,8 @@ print(arr)
 arr = np.arange(2, 20, 3, dtype=np.float_)
 print(arr)
 
-
+arr = np.arange(1, 2, 0.2, dtype=float)
+print("The array is: ", arr, "\n")
 
 #Creating array using shape() and reshape()
 arr = np.arange(2, 13, 2)
