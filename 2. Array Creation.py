@@ -90,3 +90,35 @@ print("After shaping:\n", arr, '\n')
 newArr = arr.reshape(3, 2)
 print("newArray: \n", newArr, "\n")
 print("OldArray: \n", arr, "\n")
+
+
+#Creating array that contains the numbers that are evenly space
+#on a log scale.
+#numpy.logspace(start, stop, num, endpoint, base, dtype)
+#start = base^start
+#end = base^end
+#num = Number of values between the range. Default = 50
+#base = 10 (default)
+
+arr = np.logspace(0, 5, num=6, base=2, dtype=int)
+print(arr)
+
+
+#Create array from existing list
+#This is used to create an array from existing data
+#data could be stored as list, list of touples, touples of touples,
+#or touples of lists
+
+#numpy.asarray(a, dtype = None, order = None)
+
+lst = [1, 2, 3, 4, 5]
+arr = np.asarray(lst)
+print("The array is: ", arr, "\n")
+
+arr = np.asarray(lst, dtype = np.float_)
+print("The float array: ", arr, "\n")
+
+tpl = (1, 2, 3)
+arr = np.asarray(tpl)
+print("Touple as arrray: ", arr, "\n")
+
