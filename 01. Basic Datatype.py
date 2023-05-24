@@ -16,6 +16,9 @@ print(arr)
 arr = np.array([1, 2, 3], dtype=complex)
 print(arr)
 
+arr = np.array([12+8j, 16+9j, 13-4j], dtype=complex)
+print(arr)
+
 #Data types:
 '''
 bool_ (1B)

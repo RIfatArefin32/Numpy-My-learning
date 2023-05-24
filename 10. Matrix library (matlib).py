@@ -120,12 +120,22 @@ Triangle_right marker
 'd'     Thin_diamond marker	
 '|'     Vline marker
 '_'     Hline marker
+------------------------------
+'b'	    Blue
+'g'	    Green
+'r'	    Red
+'c'	    Cyan
+'m'	    Magenta
+'y'	    Yellow
+'k'	    Black
+'w'	    White
+
 
 '''
 
 
 
-
+'''
 x = np.arange(1, 11)
 y = 2*x + 5
 plt.title("Straight line")
@@ -133,6 +143,7 @@ plt.xlabel("x axis caption")
 plt.ylabel("y axis caption") 
 plt.plot(x,y, 'P', 'y') 
 plt.show()
+'''
 
 
 '''
